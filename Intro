@@ -1,4 +1,4 @@
-DWSIM
+DWSIM - Daniel Wagner
 
 Croos UI- Mac, Linux
 
@@ -17,5 +17,57 @@ Numerical method: Nexted loops, Inside-out, Gibbs minimization
 
 Property package selection modules: Most thermodynamic models have binary interaction parameters which are fitted to match experimental data.
 DWSIM has a tool to regress experimental data and calculate binary interaction parameters for various thermodynamic models.
+
+Non polar gases at low pressure (<10 atm): Raoults law
+Non polar gases at high pressure (>10 atm): PR, SRK, PRSV2
+Polar gases at high pressure (>10 atm):PRSV2
+Systems with high hydrogen content: Chao-Seader, Grayson-streed, LKP
+Air separation/Refrigeration system: Coolprop package
+Steam/water simulations: Steam table property package
+Polar chemicals: NRTL, UNIQUAC, UNIFAC
+
+Behaviour options for flowsheet objects
+
+Skip equilibrium calculation in well defined streams
+Force material stream phase
+Force object calculation
+Specification block calculation mode
+
+Flow sheet optimisation
+Sensitivity analysis
+Mass and Energy balance summary
+
+Energy flow = enthalpy x mass flow = kJ/kg x kg/s = kJ/s = kW)
+
+Utilities: 
+Phase envelope (Pressure vs Temp)
+Binary envelope (Temp vs Mole fraction)
+
+DWSIM Chemical reactions
+
+Conversion reaction--function of temperature
+Equilibrium reaction--characterised by equilibrium constant
+Kinetic/Heterogeneous/Catalytic reaction-- led by a velocity expression which is a function of concentration of reagents and /or products and / or a catalyst.
+
+Characterization of petroleum fractions
+
+Characterization from bulk properties
+Characterization from distillation curves
+Bulk/Batch creation of pseudocomponents/pseudocompounds 
+
+
+Compound creator
+
+Enables usage of experimental data as well as UNIFAC structure information to calculate and/or estimate all constant and temperature-dependent properties for a com-
+pound that isn’t available on any of the default databases
+
+UNIFAC (Universal Functional group Activity Coefficients)
+UNIQUAC (Universal QUasi-chemical)
+
+
+Data regression utility supports regression of experimental binary data for determination of international parameters (PC-SAFT, PR, SRK, UNIQUAC, NRTL)
+
+Following data are supported: Txy, Pxy, TPxy, Txx, Pxx, TPxx,
+
 
 
