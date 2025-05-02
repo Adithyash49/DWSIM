@@ -1,0 +1,21 @@
+DWSIM
+
+Croos UI- Mac, Linux
+
+Simulation
+
+UI-Compounds, Basis, System of units, Behaviour, Object properties, Information about simulation
+
+DWSIM comes with six default compound
+databases (DWSIM, ChemSep, Biodiesel, CoolProp, ChEDL and Electrolytes), with a total of more than 1500 compounds available for your simulation.
+
+Property package: Consists of methods and models to calculate physical and chemical properties of a compound.
+If you have any new value (parameters)- you can configure in the model.
+
+Calculations: Phase equilibrium, Numerical methods, Fail-safe procedure
+Numerical method: Nexted loops, Inside-out, Gibbs minimization
+
+Property package selection modules: Most thermodynamic models have binary interaction parameters which are fitted to match experimental data.
+DWSIM has a tool to regress experimental data and calculate binary interaction parameters for various thermodynamic models.
+
+
