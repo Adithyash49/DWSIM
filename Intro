@@ -46,8 +46,12 @@ Binary envelope (Temp vs Mole fraction)
 DWSIM Chemical reactions
 
 Conversion reaction--function of temperature
-Equilibrium reaction--characterised by equilibrium constant
-Kinetic/Heterogeneous/Catalytic reaction-- led by a velocity expression which is a function of concentration of reagents and /or products and / or a catalyst.
+Equilibrium reaction--characterised by equilibrium constant; Equilibrium and gibbs
+Kinetic/Heterogeneous/Catalytic reaction-- led by a velocity expression 
+which is a function of concentration of reagents and /or products and / or a catalyst.; PFR, CSTR;
+Heterogeneous Catalytic reactions must obey the Langmuir–Hinshelwood mechanism, where
+compounds react over a solid catalyst surface. In this model, reaction rates are a function of catalyst
+amount (i.e. mol/kg cat.s). These reactions are supported by the PFR and CSTR reactors.
 
 Characterization of petroleum fractions
 
@@ -67,7 +71,102 @@ UNIQUAC (Universal QUasi-chemical)
 
 Data regression utility supports regression of experimental binary data for determination of international parameters (PC-SAFT, PR, SRK, UNIQUAC, NRTL)
 
+
+
 Following data are supported: Txy, Pxy, TPxy, Txx, Pxx, TPxx,
 
+
+Unit operation models
+
+Material stream
+Composition: mass/mole fraction/flow; molarity (moles/kg); molality (moles/litre)
+Flow: mass/molar/volumetric
+Energy stream
+
+Unit operations
+
+Mixer -- give P, H --temp is calcualted by energy balance
+Separator--give mass fraction
+Separator tank --override separation temp and pressure
+Tank : give p, del P--Temp remains same
+Pipe segment: Hydraulic profile, pressure drop correlation, Thermal profile
+Pressure drop correlation- Beggs-Brill, Lockhart-Martinelli, Petalas-Aziz, Darcy-Weisbach (for single phase)
+
+Valve: fixed pressure drop for process; Expansion is isenthalpic process
+Opening (OP) / Flow coefficient (K_v [C_v]) relationship types
+
+Linear: K_v = K_vmax * OP---Linear
+
+Pump: Isenthalpic, adiabatic efficiency ; P_pump = W (H2- H1)/ efficiency
+Compressor: Used to provide energy from vapor phase stream ; P_comp = W (H2s- H1)/ efficiency; Isentropic process
+Adiabatic and Polytropic heads: Heads are calculated from  H = P/ W*g; H= adaibatic head; Adiabatic power; W = mass flow
+Heater/ Cooler
+Shortcut column: Fenske-Underwood-Gilliland Kister - minimum reflux and distribution of products in a distillation column.
+
+Rigorous column: Solving methods to solve mass and energy balances in a column 
+Bubble column: Seader and Henley, Wang and Henke
+Sum-rates method: Burnimgam and otto
+Simultaneous correction method: Napthali and Sandholm
+
+Heat exchanger: STHE- tinker method -- Q= UA(del T)
+
+Air cooler : Q = UA (del T); Q = m (del H)
+Orifice plates - ISO 517 -- used to calculate velocity
+Continuous cake filter
+Excel unit operation
+Flowsheet unit operation
+PEM fuel cell
+Water electrolyzer
+Hydroelectric turbine; P = eff * rho * g * h* q
+Wind turbine
+Solar panel
+
+Reactors: 
+CSTR, PFR, Gibbs minimization reactor, Conversion, Equilibrium reactor
+
+
+Input parameters: energy streams (input and output), pressure drop
+Gibbs reactor: Calculation mode--direct minimization--equilibrium composition is found in such a way that final gibbs energy is at minimum.
+Reaction extent: Equilibrium compostion is found according to the reaction information in the reaction set.
+
+
+
+Dynamic modeling and simulation
+
+While steady-state analysis is mainly used for process flowsheet design, usually to determine mass and
+energy balances and approximate equipment sizes, or perhaps stream properties, the ability of dynamic
+models to model transient behavior opens up a whole new world of application.
+
+Technicals
+Phase equilibrium: the component fugacities are same in all phases.
+
+
+Fugacity Coefficient calculation models
+
+Peng-Robinson Equation of State The Peng-Robinson equation Peng and Robinson 1976 is an cubic
+Equation of State (characteristic related to the exponent of the molar volume) which relates temperature,
+pressure and molar volume of a pure component or a mixture of components at equilibrium.
+
+
+The cubic equations are, in fact, the simplest equations capable of representing the behavior of liquid and vapor
+phases simultaneously. The Peng-Robinson EOS is written in the following form
+
+Soave-Redlich-Kwong Equation of State  and PR :  low temperature and pressure conditions, can provide three roots for
+Z. In this case, if liquid properties are being calculated, the smallest root is used. If the phase is vapor,
+the largest root is used. 
+
+Calculation models for the liquid phase activity coefficient
+
+The activity coefficient γ is a factor used in thermodynamics to account for deviations from ideal be-
+haviour in a mixture of chemical substances. 
+
+
+γi = [∂(nGE/RT)/ ∂ni]P,T,nj̸=i
+
+UNIQUAC, UNIFAC, Wilson, NRTL
+
+Density
+Liquid -Rackett equation
+gas -compressibility factor
 
 
