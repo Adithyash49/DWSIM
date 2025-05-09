@@ -219,4 +219,30 @@ The monitored/measured variable (sensor output, i.e., the process variable)
 
 Pressure control
 
+CV: Pressure
+Common sensors: Bourdon tube, strain gauge
+MV: Valve opening(inlet/outlet gas or liquid), compressor speed
+
+Temp control
+
+CV: Temperature
+MV: Steam flow, coolant flow, heater power
+Measured variable: Thermocouple, RTD, thermistor
+
+Flow rate control
+
+CV: Flow rate
+Measured variable: Flow rate (via flowmeter)
+Flow sensors: Orifice plate, venturimeter, coriolis flowmeter, Ultrasonic/Doppler
+Manipulated variable: Control valve position, pump speed
+
+Volume / level control
+
+CV: Liquid volume or level in tank
+Measured variable: level or height
+Common level sensors: Float based, ultrasonic, radar
+Manipulated variable: Inflow or outflow rate (valves/pumps)
+
+
+
 
