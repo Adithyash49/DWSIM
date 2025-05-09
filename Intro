@@ -169,4 +169,54 @@ Density
 Liquid -Rackett equation
 gas -compressibility factor
 
+Equilibrium constant(K) for reversible reactions
+
+fundamental concept used to describe the balance point of a reversible chemical reaction.
+
+Methods: Spectrophotometric method, Conductometric, Potentiometric, Gas phase measurements and Computational or thermodynamics.
+
+Gibbs energy: ΔG=ΔH−TΔS; ΔG∘ =−RTln(K); K =k_f/k_r
+
+Irreversible reactions
+
+(k) can be found by 
+Initial rates method, Integrated rate laws, Half life method
+Arrhenius equation
+
+To calculate "k"
+
+order
+0     [A] vs t      [A]=[A_0] - kt
+1     ln[A] vs t     ln[A]=ln[A_0] - kt
+2     1/[A] vs t      1/[A]=1/[A_0] - kt
+
+
+AI/ML-Based Models (Active Research Area)
+Researchers are now training AI models to predict rate constants (𝑘) and activation energies using:
+
+Molecular descriptors (from SMILES, InChI)
+Graph neural networks (GNNs) or deep learning models
+Thermodynamic correlations from databases like NIST, Reaxys, PubChem
+These models are beginning to bypass full quantum calculations, making them much faster.
+
+Examples: Open Reaction Database (ORD)
+IBM RXN for Chemistry
+DeepChem
+Schrödinger’s AutoQSAR
+
+PID controller: control loop feedback device that continuously calculates an error value as the difference between
+a desired setpoint and a measured process variable.
+
+PID equation
+
+u(t)= K_p * e(t) + K_i ∫ e(τ)dτ + K_d * de(t)/dt
+​
+Tuning: Ziegler-Nichols, Cohen-Coon, Auto-tuning, Software simulation
+
+The controlled variable (what you want to maintain)
+The manipulated variable (what you adjust to control it)
+The monitored/measured variable (sensor output, i.e., the process variable)
+
+Pressure control
+
 
