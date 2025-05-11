@@ -244,5 +244,30 @@ Common level sensors: Float based, ultrasonic, radar
 Manipulated variable: Inflow or outflow rate (valves/pumps)
 
 
+Control system
 
+Dead time (τ_d): (also known as time delay or transport delay) is the amount of time that elapses between 
+the moment an input or disturbance is applied to a system and the moment its effect first becomes observable in the system output.
+
+Delay time:  is the time required for the system’s output to reach 50% of its final value following a step change in input.
+
+Definition of Process Gain (Kₚ):
+The process gain is the ratio of the steady-state change in the output (controlled variable) to the change in the input (manipulated variable), 
+following a step change.
+
+𝐾_𝑝 = ΔCV/ΔMV
+
+Time constant: The time constant is simply a measure of how quickly the system responds to that change
+
+Identifying a control system
+
+1.) Select the model
+2.) Parameter extimation
+3.) Model validation (Tangent method, statistical method)
+
+or
+
+Determination of the controller parameters according to Ziegler-Nichols with:
+• Method of stability analysis
+• Method of step response
 
